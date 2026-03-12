@@ -27,7 +27,7 @@ const ContentSections = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-3xl md:text-4xl font-light text-foreground mb-6">
               We Catch Echoes of the Eternal
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground font-body leading-relaxed">
