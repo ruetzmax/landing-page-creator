@@ -13,149 +13,168 @@ const teamMembers = [
   { name: "Emre Yüzüncüoglu", role: "M.A. Ancient Cultures of the Eastern Mediterranean", image: teamEmre },
 ];
 
-const sections = [
-  { id: "vision", label: "The Vision" },
-  { id: "product", label: "The Product" },
-  { id: "story", label: "How It Became" },
-  { id: "mission", label: "Our Mission" },
-  { id: "team", label: "The Team" },
-];
-
 const ContentSections = () => {
   return (
-    <>
-      {sections.map((section, index) => (
-        <section
-          key={section.id}
-          id={section.id}
-          className={`py-24 ${index % 2 === 1 ? "bg-secondary/30" : ""}`}
+    <div className="container mx-auto px-6">
+      {/* Headline */}
+      <section className="py-20">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-center max-w-5xl mx-auto"
         >
-          <div className="container mx-auto px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
-            >
-              <span className="text-primary font-medium text-sm uppercase tracking-wider">
-                {section.label}
-              </span>
+          Meet the Messengers of History Face to Face
+        </motion.h1>
+      </section>
 
-              {section.id === "vision" ? (
-                <div className="mt-8">
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
-                    We Catch Echoes of the Eternal
-                  </h2>
-                  <div className="space-y-6 text-lg text-muted-foreground font-body leading-relaxed">
-                    <p>
-                      Transform an exhibition into the Macedonian court and have visitors be received by Alexander the Great himself. The conquerer grants you an audience and you can ask him everything you want about his campaigns, his personal life – or maybe you are curious about his favorite breakfast beverage?
-                    </p>
-                    <p>
-                      Or maybe you want to have a conversation with Gaius Caius, son of a freed slave, who made a living as baker in Ancient Rome?
-                    </p>
-                    <p>
-                      This is what we are providing. Interactive AI-powered avatars of historical personalities, both famous and unknown, equipped with the capacity to engage in conversation with museum guests.
-                    </p>
-                  </div>
+      {/* Vision text (left) + Demo video (right) */}
+      <section className="pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left: Vision text */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+              We Catch Echoes of the Eternal
+            </h2>
+            <div className="space-y-4 text-lg text-muted-foreground font-body leading-relaxed">
+              <p>
+                Transform an exhibition into the Macedonian court and have visitors be received by Alexander the Great himself. The conquerer grants you an audience and you can ask him everything you want. About his campaigns, his personal life – or maybe you are curious about his favorite breakfast beverage?
+              </p>
+              <p>
+                Would you rather want to have a conversation with Gaius Caius, son of a freed slave, who made a living as baker in Ancient Rome?
+              </p>
+              <p>
+                This is what we are providing. Interactive AI-powered avatars of historical personalities, both famous and unknown, equipped with the capacity to engage in conversation with museum guests.
+              </p>
+            </div>
+
+            {/* Subheader */}
+            <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+              <p className="font-display text-xl md:text-2xl font-semibold text-foreground leading-snug">
+                Transform your exhibition into a stage for dialogue that transcends millenia
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Right: Demo video placeholder */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full aspect-video rounded-2xl bg-secondary border border-border flex items-center justify-center"
+          >
+            <div className="text-center text-muted-foreground">
+              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <p className="text-sm">Demo Video</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Product (left) + Mission (right) */}
+      <section className="pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="p-8 rounded-2xl bg-secondary/30 border border-border/50"
+          >
+            <span className="text-primary font-medium text-sm uppercase tracking-wider">The Product</span>
+            <div className="mt-4 space-y-4 text-lg text-muted-foreground font-body leading-relaxed">
+              <p>
+                Great personalities have a lot to say – far more than can fit on an information board. Our AI-powered avatars follow our ethical guidelines and have access to historically curated databases chosen by you – and only those databases.
+              </p>
+              <p>
+                They are always open to conversation and convey the information that visitors are really interested in. This means that both young history enthusiasts and experienced season ticket holders get their money's worth.
+              </p>
+              <p>
+                The knowledge of an entire permanent exhibition gathered on the surface of a single screen.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="p-8 rounded-2xl bg-secondary/30 border border-border/50"
+          >
+            <span className="text-primary font-medium text-sm uppercase tracking-wider">Our Motivation</span>
+            <div className="mt-4 space-y-4 text-lg text-muted-foreground font-body leading-relaxed">
+              <p>
+                Reviving History began as a student project at the Hasso Plattner Institute's d-school in collaboration with the Egyptian exhibition at the Neues Museum Berlin. There, we succeeded in making the exciting stories and personal destinies hidden behind hieroglyphics accessible to a wide audience.
+              </p>
+              <p>
+                Thanks to the support of Potsdam Transfer, we are now standing on our own two feet. Our goal: to fill more museums with the sound of intercultural and intergenerational dialogue!
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section id="team" className="py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <span className="text-primary font-medium text-sm uppercase tracking-wider">The Team</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-4 mb-12">
+            Meet the Team
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
+            {teamMembers.map((member) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-primary/30 mb-4 bg-secondary">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-2xl font-display font-bold text-primary">
+                      {member.name.split(" ").map(n => n[0]).join("")}
+                    </div>
+                  )}
                 </div>
-              ) : section.id === "product" ? (
-                <div className="mt-8">
-                  <div className="space-y-6 text-lg text-muted-foreground font-body leading-relaxed">
-                    <p>
-                      Great personalities have a lot to say – far more than can fit on an information board. Our AI-powered avatars follow our ethical guidelines and have access to historically curated databases chosen by you – and only those databases.
-                    </p>
-                    <p>
-                      They are always open to conversation and convey the information that visitors are really interested in. This means that both young history enthusiasts and experienced season ticket holders get their money's worth.
-                    </p>
-                    <p>
-                      The knowledge of an entire permanent exhibition gathered on the surface of a single screen.
-                    </p>
-                  </div>
-                </div>
-              ) : section.id === "story" ? (
-                <div className="mt-8">
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8">
-                    Contextless exhibition items in museums
-                  </h2>
-                  <div className="space-y-6 text-lg text-muted-foreground font-body leading-relaxed">
-                    <p>
-                      We want to give them life and make their relevance accessible.
-                    </p>
-                    <ul className="space-y-4 list-none">
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0" />
-                        <span>Enable people to interact with historical personalities in real time.</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0" />
-                        <span>Enhance the learning experience.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              ) : section.id === "team" ? (
-                <div className="mt-8">
-                  <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-12">
-                    Team Pilav
-                  </h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {teamMembers.map((member) => (
-                      <motion.div
-                        key={member.name}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="flex flex-col items-center text-center"
-                      >
-                        <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-primary/30 mb-4 bg-secondary">
-                          {member.image ? (
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-full h-full object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center text-2xl font-display font-bold text-primary">
-                              {member.name.split(" ").map(n => n[0]).join("")}
-                            </div>
-                          )}
-                        </div>
-                        <h3 className="font-display text-sm font-semibold text-foreground">
-                          {member.name}
-                        </h3>
-                        {member.role && (
-                          <p className="text-xs text-muted-foreground mt-1 leading-snug">
-                            {member.role}
-                          </p>
-                        )}
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              ) : section.id === "mission" ? (
-                <div className="mt-8">
-                  <div className="space-y-6 text-lg text-muted-foreground font-body leading-relaxed">
-                    <p>
-                      Reviving History began as a student project at the Hasso Plattner Institute's d-school in collaboration with the Egyptian exhibition at the Neues Museum Berlin. There, we succeeded in making the exciting stories and personal destinies hidden behind hieroglyphics accessible to a wide audience.
-                    </p>
-                    <p>
-                      Thanks to the support of Potsdam Transfer, we are now standing on our own two feet. Our goal: to fill more museums with the sound of intercultural and intergenerational dialogue!
-                    </p>
-                  </div>
-                </div>
-              ) : (
-                <div className="mt-8 min-h-[200px] rounded-2xl border-2 border-dashed border-border/50 flex items-center justify-center">
-                  <p className="text-muted-foreground/50 text-lg">
-                    Content for "{section.label}" goes here
+                <h3 className="font-display text-sm font-semibold text-foreground">
+                  {member.name}
+                </h3>
+                {member.role && (
+                  <p className="text-xs text-muted-foreground mt-1 leading-snug">
+                    {member.role}
                   </p>
-                </div>
-              )}
-            </motion.div>
+                )}
+              </motion.div>
+            ))}
           </div>
-        </section>
-      ))}
-    </>
+        </motion.div>
+      </section>
+    </div>
   );
 };
 
