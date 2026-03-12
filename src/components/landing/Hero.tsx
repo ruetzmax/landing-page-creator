@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-balance"
           >
-            Meet History's Greatest Minds{" "}
+            Meet the Messengers of History{" "}
             <span className="gradient-text">Face to Face</span>
           </motion.h1>
 
