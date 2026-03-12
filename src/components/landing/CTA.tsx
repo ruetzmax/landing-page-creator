@@ -17,7 +17,7 @@ const CTA = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light mb-6">
             Ready to Transform Your{" "}
             <span className="gradient-text">Museum Experience?</span>
           </h2>
