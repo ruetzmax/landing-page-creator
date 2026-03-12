@@ -3,17 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 const navLinks = [{
-  name: "The Vision",
-  href: "#vision"
+  name: "Demo",
+  href: "#demo"
 }, {
   name: "The Product",
   href: "#product"
 }, {
-  name: "How It Became",
-  href: "#story"
-}, {
-  name: "Our Mission",
-  href: "#mission"
+  name: "Our Motivation",
+  href: "#motivation"
 }, {
   name: "The Team",
   href: "#team"
@@ -52,15 +49,6 @@ const Navbar = () => {
               </a>)}
           </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button variant="glow" size="sm">
-              Get Started
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2">
@@ -86,12 +74,6 @@ const Navbar = () => {
                 {navLinks.map(link => <a key={link.name} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors">
                     {link.name}
                   </a>)}
-                <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                  <Button variant="ghost" className="justify-start">
-                    Sign In
-                  </Button>
-                  <Button variant="glow">Get Started</Button>
-                </div>
               </div>
             </div>
           </motion.div>}
