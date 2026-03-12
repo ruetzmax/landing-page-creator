@@ -37,9 +37,6 @@ const CTA = () => {
             </Button>
           </div>
 
-          <p className="mt-8 text-sm text-muted-foreground">
-            No commitment required • Response within 24 hours • Free consultation
-          </p>
         </motion.div>
       </div>
     </section>

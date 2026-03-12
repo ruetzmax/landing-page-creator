@@ -74,12 +74,6 @@ const Navbar = () => {
                 {navLinks.map(link => <a key={link.name} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors">
                     {link.name}
                   </a>)}
-                <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                  <Button variant="ghost" className="justify-start">
-                    Sign In
-                  </Button>
-                  <Button variant="glow">Get Started</Button>
-                </div>
               </div>
             </div>
           </motion.div>}
