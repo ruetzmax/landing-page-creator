@@ -132,7 +132,7 @@ const ContentSections = () => {
           className="text-center"
         >
           <span className="text-primary font-medium text-sm uppercase tracking-wider">The Team</span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-4 mb-12">
+          <h2 className="font-display text-3xl md:text-4xl font-light text-foreground mt-4 mb-12">
             Meet the Team
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
