@@ -30,8 +30,8 @@ const ContentSections = () => {
       </section>
 
       {/* Vision text (left) + Demo video (right) */}
-      <section className="pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <section className="pb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left: Vision text */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -53,24 +53,18 @@ const ContentSections = () => {
                 This is what we are providing. Interactive AI-powered avatars of historical personalities, both famous and unknown, equipped with the capacity to engage in conversation with museum guests.
               </p>
             </div>
-
-            {/* Subheader */}
-            <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
-              <p className="font-display text-xl md:text-2xl font-semibold text-foreground leading-snug">
-                Transform your exhibition into a stage for dialogue that transcends millenia
-              </p>
-            </div>
           </motion.div>
 
-          {/* Right: Demo video placeholder */}
+          {/* Right: Demo video */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full aspect-video rounded-2xl bg-secondary border border-border flex items-center justify-center"
+            id="demo"
+            className="w-full rounded-2xl bg-secondary border border-border flex items-center justify-center"
           >
-            <div className="text-center text-muted-foreground">
+            <div className="text-center text-muted-foreground py-20">
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
@@ -80,10 +74,23 @@ const ContentSections = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Subheader - full width */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-12 p-6 rounded-2xl bg-primary/10 border border-primary/20"
+        >
+          <p className="font-display text-xl md:text-2xl font-semibold text-foreground leading-snug text-center">
+            Transform your exhibition into a stage for dialogue that transcends millenia
+          </p>
+        </motion.div>
       </section>
 
-      {/* Product (left) + Mission (right) */}
-      <section className="pb-20">
+      {/* Product (left) + Motivation (right) */}
+      <section id="product" className="py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -111,6 +118,7 @@ const ContentSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
+            id="motivation"
             className="p-8 rounded-2xl bg-secondary/30 border border-border/50"
           >
             <span className="text-primary font-medium text-sm uppercase tracking-wider">Our Motivation</span>
