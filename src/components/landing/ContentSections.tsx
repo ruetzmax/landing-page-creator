@@ -95,7 +95,7 @@ const ContentSections = () => {
               <p className="text-justify">
                 Great personalities have a lot to say – far more than can fit on an information board. Our AI-powered avatars follow our ethical guidelines and have access to historically curated databases chosen by you – and only those databases.
               </p>
-              <p>
+              <p className="text-justify">
                 They are always open to conversation and convey the information that visitors are really interested in. This means that both young history enthusiasts and experienced season ticket holders get their money's worth.
               </p>
               <p>
