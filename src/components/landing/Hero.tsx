@@ -37,7 +37,7 @@ const Hero = () => {
             className="font-display font-light leading-[1.3] mt-16 mb-8 uppercase tracking-[0.15em] text-foreground">
             
             <span className="text-3xl md:text-4xl lg:text-5xl block mb-3 text-foreground/70">
-              HISTORY STANDS BEFORE YOU
+              <span className="text-primary">HISTORY</span> STANDS BEFORE YOU
             </span>
             <span className="text-4xl md:text-5xl lg:text-6xl block">
               Hear the <span className="text-primary">Voices of the Past</span>
@@ -69,12 +69,8 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4">
             
             <Button variant="hero" size="xl" className="group">
-              Request a Demo
+              Contact us to Schedule a Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="xl" className="group">
-              <Play className="w-5 h-5" />
-              Watch Video
             </Button>
           </motion.div>
 
