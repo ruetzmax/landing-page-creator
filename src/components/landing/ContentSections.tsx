@@ -135,19 +135,13 @@ const ContentSections = () => {
             Transform your exhibition into a stage for dialogue that transcends millenia
           </p>
         </motion.div>
-      </section>
 
-      {/* Divider */}
-      <div className="w-16 h-px bg-border/50 mx-auto" />
-
-      {/* Team */}
-      <section id="team" className="py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center">
+          className="text-center mt-16">
           
           <span className="text-primary/70 font-display uppercase tracking-[0.2em] text-xl">The Team</span>
           
