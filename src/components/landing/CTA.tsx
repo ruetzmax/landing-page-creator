@@ -13,8 +13,8 @@ const CTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="max-w-3xl mx-auto text-center"
-        >
+          className="max-w-3xl mx-auto text-center">
+          
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light mb-4 uppercase tracking-[0.1em]">
             Ready to Transform Your{" "}
             <span className="gradient-text">Museum Experience?</span>
@@ -22,9 +22,9 @@ const CTA = () => {
 
           <div className="w-16 h-px bg-primary/30 mx-auto my-8" />
 
-          <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto font-body leading-relaxed">
-            Schedule a demo to see our AI avatars in action.
-          </p>
+          
+
+          
 
           <div className="flex items-center justify-center">
             <Button variant="hero" size="xl" className="group">
@@ -34,8 +34,8 @@ const CTA = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTA;
