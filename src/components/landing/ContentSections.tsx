@@ -82,7 +82,12 @@ const ContentSections = () => {
       <div className="w-16 h-px bg-border/50 mx-auto" />
 
       {/* Product (left) + Motivation (right) */}
-      <section id="product" className="py-20">
+      <section id="product" className="relative py-20">
+        {/* Background image */}
+        <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 w-screen">
+          <img src={bgPrimaporta} alt="" className="w-full h-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
