@@ -17,7 +17,7 @@ const ContentSections = () => {
   return (
     <div className="container mx-auto px-6">
       {/* Vision text (left) + Demo video (right) */}
-      <section className="py-24">
+      <section className="py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
           {/* Left: Vision text */}
           <motion.div
@@ -69,7 +69,7 @@ const ContentSections = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 py-8 px-8 rounded-xl border border-primary/15 bg-primary/5">
+          className="mt-20 py-8 px-8 rounded-xl border border-primary/15 bg-primary/5">
           
           <p className="font-display text-lg md:text-xl font-light text-foreground/80 leading-relaxed text-center tracking-wide">
             Transform your exhibition into a stage for dialogue that transcends millenia
@@ -81,7 +81,7 @@ const ContentSections = () => {
       <div className="w-16 h-px bg-border/50 mx-auto" />
 
       {/* Product (left) + Motivation (right) */}
-      <section id="product" className="py-24">
+      <section id="product" className="py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -91,15 +91,12 @@ const ContentSections = () => {
             className="p-8 md:p-10 rounded-xl bg-card/50 border border-border/30">
             
             <span className="text-primary/70 font-display uppercase tracking-[0.2em] text-xl">The Product</span>
-            <div className="mt-6 space-y-5 text-base md:text-lg text-muted-foreground font-body leading-relaxed text-justify">
+            <div className="mt-8 space-y-5 text-base md:text-lg text-muted-foreground font-body leading-relaxed text-justify">
               <p className="text-justify font-serif">
                 Great personalities have a lot to say – far more than can fit on an information board. Our AI-powered avatars follow our ethical guidelines and have access to historically curated databases chosen by you – and only those databases.
               </p>
               <p className="text-justify font-serif">
                 They are always open to conversation and convey the information that visitors are really interested in. This means that both young history enthusiasts and experienced season ticket holders get their money's worth.
-              </p>
-              <p>
-
               </p>
             </div>
           </motion.div>
@@ -113,9 +110,9 @@ const ContentSections = () => {
             className="p-8 md:p-10 rounded-xl bg-card/50 border border-border/30">
             
             <span className="text-primary/70 font-display uppercase tracking-[0.2em] text-xl text-right">Our Motivation</span>
-            <div className="mt-6 space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed text-justify font-serif">
+            <div className="mt-8 space-y-5 text-base md:text-lg text-muted-foreground leading-relaxed text-justify font-serif">
               <p className="text-justify">
-                Reviving History began as a student project at the Hasso Plattner Institute's d-school in collaboration with the Egyptian exhibition at the Neues Museum Berlin. There, we succeeded in making the exciting stories and personal destinies hidden behind hieroglyphics accessible to a wide audience.
+                Reviving History began as a student project at the Hasso Plattner Institute's d-school in collaboration with the Ägyptisches Museum und Papyrussammlung in Berlin. There, we succeeded in making the exciting stories and personal destinies hidden behind hieroglyphics accessible to a wide audience.
               </p>
               <p className="text-justify">
                 Thanks to the support of Potsdam Transfer, we are now standing on our own two feet. Our goal: to fill more museums with the sound of intercultural and intergenerational dialogue!
@@ -129,7 +126,7 @@ const ContentSections = () => {
       <div className="w-16 h-px bg-border/50 mx-auto" />
 
       {/* Team */}
-      <section id="team" className="py-24">
+      <section id="team" className="py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -139,9 +136,7 @@ const ContentSections = () => {
           
           <span className="text-primary/70 font-display uppercase tracking-[0.2em] text-xl">The Team</span>
           
-
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 max-w-4xl mx-auto">
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 max-w-4xl mx-auto">
             {teamMembers.map((member, i) =>
             <motion.div
               key={member.name}
@@ -157,7 +152,6 @@ const ContentSections = () => {
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover" /> :
-
 
                 <div className="w-full h-full flex items-center justify-center text-2xl font-display font-light text-primary/60">
                       {member.name.split(" ").map((n) => n[0]).join("")}
