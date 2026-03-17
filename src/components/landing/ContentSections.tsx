@@ -50,6 +50,7 @@ const ContentSections = () => {
                 This is what we are providing. Interactive AI-powered avatars of historical personalities, both famous and unknown, equipped with the capacity to engage in conversation with museum guests.
               </p>
             </div>
+            </div>
           </motion.div>
 
           {/* Right: Demo video */}
