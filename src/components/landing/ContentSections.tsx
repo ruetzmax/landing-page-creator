@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import bgPrimaporta from "@/assets/bg-primaporta.jpg";
+import bgHelmet from "@/assets/bg-corinthian-helmet.jpg";
 import teamImge from "@/assets/team-imge.png";
 import teamMax from "@/assets/team-max.png";
 import teamKlara from "@/assets/team-klara.jpg";
@@ -26,7 +27,14 @@ const ContentSections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col justify-center">
+            className="relative flex flex-col justify-center overflow-hidden rounded-xl">
+            
+            {/* Background helmet image */}
+            <div className="absolute inset-0">
+              <img src={bgHelmet} alt="" className="w-full h-full object-cover opacity-15" />
+              <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/90" />
+            </div>
+            <div className="relative z-10 p-8">
             
             <h2 className="font-display text-lg md:text-xl lg:text-2xl font-light text-foreground uppercase tracking-[0.15em] mb-8 whitespace-nowrap">
               We Catch Echoes of the Eternal
@@ -41,6 +49,7 @@ const ContentSections = () => {
               <p>
                 This is what we are providing. Interactive AI-powered avatars of historical personalities, both famous and unknown, equipped with the capacity to engage in conversation with museum guests.
               </p>
+            </div>
             </div>
           </motion.div>
 
