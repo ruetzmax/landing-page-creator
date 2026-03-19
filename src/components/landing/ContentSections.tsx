@@ -91,7 +91,7 @@ const ContentSections = () => {
       <div className="w-16 h-px bg-border/50 mx-auto my-16" />
 
       {/* Product (left) + Motivation (right) */}
-      <section id="product" className="relative py-20">
+      <section id="product" className="relative pb-0">
         {/* Background image */}
         <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 w-screen">
           <img src={bgPrimaporta} alt="" className="w-full h-full object-cover opacity-15" />
