@@ -79,7 +79,7 @@ const ContentSections = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20 py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
+          className="mt-16 py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
           
           <p className="font-display text-lg md:text-xl font-light text-foreground/80 leading-relaxed text-center tracking-wide">
             Transform your exhibition into a stage for dialogue that transcends millenia
