@@ -88,7 +88,7 @@ const ContentSections = () => {
       </section>
 
       {/* Divider */}
-      <div className="w-16 h-px bg-border/50 mx-auto" />
+      <div className="w-16 h-px bg-border/50 mx-auto my-16" />
 
       {/* Product (left) + Motivation (right) */}
       <section id="product" className="relative py-20">
