@@ -19,7 +19,7 @@ const ContentSections = () => {
   return (
     <div className="container mx-auto px-6">
       {/* Vision text (left) + Demo video (right) */}
-      <section className="py-20">
+      <section className="pt-16 pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
           {/* Left: Vision text */}
           <motion.div
@@ -79,7 +79,7 @@ const ContentSections = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20 py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
+          className="mt-16 py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
           
           <p className="font-display text-lg md:text-xl font-light text-foreground/80 leading-relaxed text-center tracking-wide">
             Transform your exhibition into a stage for dialogue that transcends millenia
@@ -88,10 +88,10 @@ const ContentSections = () => {
       </section>
 
       {/* Divider */}
-      <div className="w-16 h-px bg-border/50 mx-auto" />
+      <div className="w-16 h-px bg-border/50 mx-auto my-16" />
 
       {/* Product (left) + Motivation (right) */}
-      <section id="product" className="relative py-20">
+      <section id="product" className="relative pb-0">
         {/* Background image */}
         <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 w-screen">
           <img src={bgPrimaporta} alt="" className="w-full h-full object-cover opacity-15" />
@@ -143,7 +143,7 @@ const ContentSections = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
+        className="mt-16 py-8 px-8 rounded-xl border border-primary/30 bg-primary/15">
         
         <p className="font-display text-lg md:text-xl font-light text-foreground/80 leading-relaxed text-center tracking-wide">
           The knowledge of an entire exhibition on the surface of a single screen.
@@ -151,10 +151,10 @@ const ContentSections = () => {
       </motion.div>
 
       {/* Divider */}
-      <div className="w-16 h-px bg-border/50 mx-auto my-0" />
+      <div className="w-16 h-px bg-border/50 mx-auto my-16" />
 
       {/* Team */}
-      <section id="team" className="py-20">
+      <section id="team" className="pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
