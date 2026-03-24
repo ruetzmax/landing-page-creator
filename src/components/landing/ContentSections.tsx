@@ -36,7 +36,7 @@ const ContentSections = () => {
             </div>
             <div className="relative z-10 p-8">
             
-            <h2 className="font-display text-lg md:text-xl lg:text-2xl font-light text-foreground uppercase tracking-[0.15em] mb-8 whitespace-nowrap">
+            <h2 className="font-display text-lg md:text-xl lg:text-2xl font-light text-primary uppercase tracking-[0.15em] mb-8">
               We Catch Echoes of the Eternal
             </h2>
             <div className="space-y-5 text-base md:text-lg text-muted-foreground font-body leading-relaxed text-justify">
