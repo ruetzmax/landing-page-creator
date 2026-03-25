@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-temple.jpg";
-import dschoolLogo from "@/assets/logo-dschool.png";
+import dschoolLogo from "@/assets/logo-hpi-d-school.svg";
 
 const Hero = () => {
   return (
@@ -87,9 +87,9 @@ const Hero = () => {
             <div className="flex items-center justify-center gap-10 flex-wrap">
               <img
                 src={dschoolLogo}
-                alt="HPI d-school"
-                className="h-8 opacity-50"
-                style={{ filter: "grayscale(100%) brightness(0.7) contrast(1.2) sepia(30%) invert(1)" }} />
+                alt="HPI D-School"
+                className="h-7 opacity-60"
+                style={{ filter: "brightness(0) invert(1) opacity(0.7)" }} />
               
               <span className="text-sm font-display font-light text-foreground/50 tracking-wider">
                 Potsdam Transfer
