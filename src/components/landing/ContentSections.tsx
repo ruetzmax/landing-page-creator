@@ -12,7 +12,7 @@ const teamMembers = [
 { name: "Max Rütz", role: "", image: teamMax },
 { name: "Klara Klostermann", role: "B.Sc. Politics and Economics", image: teamKlara },
 { name: "Sarah-Lea Langner", role: "", image: teamSarah },
-{ name: "Emre Yüzüncüoglu", role: "M.A. Ancient Cultures of the Eastern Mediterranean", image: teamEmre, imagePosition: "center 30%" }];
+{ name: "Emre Yüzüncüoglu", role: "M.A. Ancient Cultures of the Eastern Mediterranean", image: teamEmre, imagePosition: "center 20%" }];
 
 
 const ContentSections = () => {
