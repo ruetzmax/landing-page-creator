@@ -5,7 +5,7 @@ import teamImge from "@/assets/team-imge.png";
 import teamMax from "@/assets/max-ruetz.png";
 import teamKlara from "@/assets/team-klara.jpg";
 import teamSarah from "@/assets/team-sarah.png";
-import teamEmre from "@/assets/team-emre.png";
+import teamEmre from "@/assets/team-emre.jpg";
 
 const teamMembers = [
 { name: "Imge Yüzüncüoglu", role: "M.Sc. Cognitive Systems", image: teamImge },
