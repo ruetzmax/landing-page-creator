@@ -8,11 +8,11 @@ import teamSarah from "@/assets/team-sarah.png";
 import teamEmre from "@/assets/team-emre.jpg";
 
 const teamMembers = [
-{ name: "Imge Yüzüncüoglu", role: "M.Sc. Cognitive Systems", image: teamImge },
-{ name: "Max Rütz", role: "M.Sc. Computer Science\nDevelopment + Communication", image: teamMax },
-{ name: "Klara Klostermann", role: "B.Sc. Politics and Economics", image: teamKlara },
+{ name: "Imge Yüzüncüoglu", role: "M.Sc. Cognitive Systems\nStrategy & Operations", image: teamImge },
+{ name: "Max Rütz", role: "M.Sc. Computer Science\nDevelopment & Communication", image: teamMax },
+{ name: "Klara Klostermann", role: "B.Sc. Politics and Economics\nFinances & Ethics", image: teamKlara },
 { name: "Sarah-Lea Langner", role: "", image: teamSarah },
-{ name: "Emre Yüzüncüoglu", role: "M.A. Ancient Cultures of the Eastern Mediterranean", image: teamEmre, imagePosition: "center 20%" }];
+{ name: "Emre Yüzüncüoglu", role: "M.A. Ancient Cultures of the Eastern Mediterranean\nKnowledge Management & Communication", image: teamEmre, imagePosition: "center 20%" }];
 
 
 const ContentSections = () => {
