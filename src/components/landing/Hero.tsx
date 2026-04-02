@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-temple.jpg";
 import dschoolLogo from "@/assets/logo-hpi-d-school.svg";
+import potsdamTransferLogo from "@/assets/logo-potsdam-transfer.svg";
 
 const Hero = () => {
   return (
@@ -93,9 +94,11 @@ const Hero = () => {
                 className="h-7 opacity-60"
                 style={{ filter: "brightness(0) invert(1) opacity(0.7)" }} />
               
-              <span className="text-sm font-display font-light text-foreground/50 tracking-wider">
-                Potsdam Transfer
-              </span>
+              <img
+                src={potsdamTransferLogo}
+                alt="Potsdam Transfer"
+                className="h-7 opacity-60"
+                style={{ filter: "brightness(0) invert(1) opacity(0.7)" }} />
             </div>
           </motion.div>
         </motion.div>
