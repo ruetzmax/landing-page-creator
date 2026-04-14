@@ -27,7 +27,7 @@ const CTA = () => {
           
 
           <div className="flex items-center justify-center">
-            <a href="mailto:info@reviving-history.de">
+            <a href="mailto:info@echolore.de">
               <Button variant="hero" size="xl" className="group">
                 Schedule a demo to see our AI avatars in action
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -37,8 +37,8 @@ const CTA = () => {
 
           <p className="mt-4 text-sm text-muted-foreground/60 font-body">
             or send us an e-mail at{" "}
-            <a href="mailto:info@reviving-history.de" className="text-primary/70 hover:text-primary transition-colors underline underline-offset-2">
-              info@reviving-history.de
+            <a href="mailto:info@echolore.de" className="text-primary/70 hover:text-primary transition-colors underline underline-offset-2">
+              info@echolore.de
             </a>
           </p>
         </motion.div>
